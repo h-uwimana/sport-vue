@@ -7,32 +7,35 @@
 						><strong> home </strong></router-link
 					>
 				</li>
-				<li class="nav-item dropdown dropend">
-					<a
-						class="nav-link dropdown-toggle text-warning"
-						href="#"
-						id="dropdown"
-						role="button"
-						data-bs-toggle="dropdown"
-						aria-haspopup="true"
-						aria-expanded="false"
-					>
-						<strong> Sports </strong>
-					</a>
-					<div class="dropdown-menu" aria-labelledby="dropdown">
-						<router-link class="dropdown-item" to="Football"
-							>Football</router-link
+				<div v-if="this.$route.name != 'home'">
+					<li class="nav-item dropdown dropend">
+						<a
+							class="nav-link dropdown-toggle text-warning"
+							href="#"
+							id="dropdown"
+							role="button"
+							data-bs-toggle="dropdown"
+							aria-haspopup="true"
+							aria-expanded="false"
 						>
+							<strong> Sports </strong>
+						</a>
+						<div class="dropdown-menu" aria-labelledby="dropdown">
+							<router-link class="dropdown-item" to="Football"
+								>Football</router-link
+							>
 
-						<router-link class="dropdown-item" to="Basketball"
-							>Basketball</router-link
-						>
+							<router-link class="dropdown-item" to="Basketball"
+								>Basketball</router-link
+							>
 
-						<router-link class="dropdown-item" to="F1Racing"
-							>F1 Racing</router-link
-						>
-					</div>
-				</li>
+							<router-link class="dropdown-item" to="F1Racing"
+								>F1 Racing</router-link
+							>
+						</div>
+					</li>
+				</div>
+
 				<li class="nav-item">
 					<router-link to="/about" class="nav-link text-warning">
 						<strong> About us </strong>
