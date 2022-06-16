@@ -65,4 +65,17 @@
 	ul {
 		margin-top: 5rem !important;
 	}
+
+	a {
+		font-size: 1.4rem !important;
+		transition: all 0.2s ease-in-out !important;
+	}
+
+	a:hover {
+		font-size: 1.6rem !important;
+	}
+
+	.text-warning {
+		color: #f2c53d !important;
+	}
 </style>

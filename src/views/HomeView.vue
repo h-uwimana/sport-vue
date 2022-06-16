@@ -44,6 +44,7 @@
 					y: 500,
 					duration: 1,
 				});
+				console.log(navigator);
 			},
 		},
 		// setup() {
