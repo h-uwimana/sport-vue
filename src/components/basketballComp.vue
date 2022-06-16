@@ -1,7 +1,7 @@
 <template>
 	<div>
-		<section class="start bg-white">
-			<div class="position-relative">
+		<section class="bg-white">
+			<div class="start position-relative">
 				<div class="position-absulte">
 					<img
 						:src="require('@/assets/Basketball/test.png')"
@@ -31,9 +31,7 @@
 		transition: 1s;
 	}
 	img {
-		height: 41.4rem !important;
-	}
-	.title {
+		height: 44rem !important;
 	}
 	.fontS {
 		font-size: 2.1rem !important;
