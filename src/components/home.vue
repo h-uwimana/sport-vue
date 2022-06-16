@@ -83,7 +83,7 @@
 	}
 
 	.Body:hover #backgroundImg {
-		transform: scale(1.2);
+		transform: scale(1.2) !important;
 
 		opacity: 1 !important;
 	}
