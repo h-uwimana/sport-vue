@@ -2,12 +2,12 @@
 	<div>
 		<nav class="nav navbar-light position-fixed sticky-top bg-opacity-75">
 			<ul class="col navbar-nav p-4 flex-column">
-				<li class="nav-item">
-					<router-link class="nav-link nav-link text-warning bold" to="/"
-						><strong> home </strong></router-link
-					>
-				</li>
 				<div v-if="this.$route.name != 'home'">
+					<li class="nav-item">
+						<router-link class="nav-link nav-link text-warning bold" to="/"
+							><strong> home </strong></router-link
+						>
+					</li>
 					<li class="nav-item dropdown dropend">
 						<a
 							class="nav-link dropdown-toggle text-warning"
@@ -35,12 +35,12 @@
 						</div>
 					</li>
 				</div>
-
 				<li class="nav-item">
 					<router-link to="/about" class="nav-link text-warning">
 						<strong> About us </strong>
 					</router-link>
 				</li>
+
 				<li class="nav-item">
 					<router-link to="/contact" class="nav-link text-warning">
 						<strong> contact </strong>

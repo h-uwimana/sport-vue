@@ -1,5 +1,14 @@
 <template>
-	<div class="about">
-		<h1>This is an football page</h1>
+	<div class="footballview">
+		<footballComp />
 	</div>
 </template>
+<script>
+	import footballComp from "@/components/footballComp.vue";
+
+	export default {
+		components: {
+			footballComp,
+		},
+	};
+</script>

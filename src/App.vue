@@ -274,7 +274,7 @@
 
 	.fade-enter-active,
 	.fade-leave-active {
-		transition: opacity 0.5s ease;
+		transition: opacity 0.7s ease-in-out;
 	}
 
 	.fade-enter-from,
@@ -285,5 +285,6 @@
 <style>
 	body {
 		background-color: black !important;
+		font-family: montserrat, sans-serif;
 	}
 </style>
