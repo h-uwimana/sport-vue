@@ -1,5 +1,12 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+	<about />
 </template>
+<script>
+	import about from "@/components/racerComp";
+	export default {
+		components: {
+			about,
+		},
+	};
+</script>
+<style lang=""></style>

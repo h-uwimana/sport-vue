@@ -1,10 +1,10 @@
 <template>
-	<div class="about">
-		<h1>This is an f1 page</h1>
-	</div>
+	<f1 />
 </template>
 <script>
+	import f1 from "@/components/formula1Comp.vue";
 	export default {
+		components: { f1 },
 		setup() {},
 	};
 </script>

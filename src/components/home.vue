@@ -41,10 +41,6 @@
 
 <script>
 	import { gsap } from "gsap";
-	// import flip from "gsap/Flip";
-	import gsapCSS from "gsap/CSSRulePlugin";
-
-	gsap.registerPlugin(gsapCSS);
 
 	export default {
 		name: "HelloWorld",
