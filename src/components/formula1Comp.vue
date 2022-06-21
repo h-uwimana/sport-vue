@@ -89,7 +89,7 @@
 	export default {
 		data() {
 			return {
-				sports: ["Basketball", "F1 Racing", "Football"],
+				// sports: ["Basketball", "F1 Racing", "Football"],
 				col: "col-3",
 				lastState: null,
 				driversCard: [
@@ -144,7 +144,11 @@
 				.then(() => {});
 		},
 
-		created() {},
+		computed: {
+			routeId() {
+				return this.$route.params.id;
+			},
+		},
 	};
 </script>
 

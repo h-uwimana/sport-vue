@@ -21,17 +21,6 @@ const routes = [
 			...route.params,
 			id: parseInt(route.params.id),
 		}),
-		children: [
-			{
-				path: "/:id",
-				name: "info",
-				component: info,
-				props: (route) => ({
-					...route.params,
-					id: route.params.id,
-				}),
-			},
-		],
 	},
 	{
 		path: "/Football",
@@ -41,17 +30,6 @@ const routes = [
 			...route.params,
 			id: parseInt(route.params.id),
 		}),
-		children: [
-			{
-				path: "/:id",
-				name: "info",
-				component: info,
-				props: (route) => ({
-					...route.params,
-					id: route.params.id,
-				}),
-			},
-		],
 	},
 	{
 		path: "/Basketball",
@@ -61,22 +39,20 @@ const routes = [
 			...route.params,
 			id: parseInt(route.params.id),
 		}),
-		children: [
-			{
-				path: "/:id",
-				name: "info",
-				component: info,
-				props: (route) => ({
-					...route.params,
-					id: route.params.id,
-				}),
-			},
-		],
 	},
 	{
 		path: "/contact",
 		name: "contact",
 		component: () => import("../views/contactView"),
+	},
+	{
+		path: "/:id",
+		name: "info",
+		component: info,
+		props: (route) => ({
+			...route.params,
+			id: route.params.id,
+		}),
 	},
 ];
 

@@ -55,7 +55,14 @@
 											Math.floor(Math.random() * 16777215).toString(16)
 										"
 									></div>
-									<div
+
+									<router-link
+										:to="{
+											name: 'info',
+											params: {
+												id: 'bs-' + nummer,
+											},
+										}"
 										class="position-absolute w-100 top-0 h-100 d-flex align-items-center justify-content-center"
 									>
 										<img
@@ -68,7 +75,7 @@
 											alt=""
 											class="w-100"
 										/>
-									</div>
+									</router-link>
 								</div>
 							</div>
 						</div>
